@@ -1,0 +1,13 @@
+{
+  "name": "node-web-app-skeleton",
+  "version": "0.1.0",
+  "description": "",
+  "main": "",
+  "author": "Jim Sullivan",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "",
+    "requirejs": "~2.1.6",
+    "underscore": "1.4.4 - 1.7.0"
+  }
+}

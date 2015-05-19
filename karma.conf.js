@@ -14,7 +14,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        {pattern: 'lib/**/*.js', included: false},
+        'bower_components/requirejs/require.js',
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/underscore/underscore.js',
+        //{pattern: 'bower_components/**/*.js', included: false},
         {pattern: 'src/**/*.js', included: false},
         {pattern: 'test/**/*Spec.js', included: false},
 
@@ -67,6 +70,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
+    singleRun: true
   });
 };
