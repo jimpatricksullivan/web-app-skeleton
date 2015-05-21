@@ -3,7 +3,9 @@ var karma = require('karma').server;
 var bower = require('gulp-bower');
 
 gulp.task('bower', function() {
-  return bower();
+  return bower({
+    cwd: './public'
+  });
 });
 
 gulp.task('test', ['bower'], function (done) {

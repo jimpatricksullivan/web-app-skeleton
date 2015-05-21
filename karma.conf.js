@@ -14,20 +14,18 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        'bower_components/requirejs/require.js',
-        'bower_components/jquery/dist/jquery.min.js',
-        'bower_components/underscore/underscore.js',
-        //{pattern: 'bower_components/**/*.js', included: false},
-        {pattern: 'src/**/*.js', included: false},
-        {pattern: 'test/**/*Spec.js', included: false},
-
-        'test/test-main.js',
+        'public/bower_components/requirejs/require.js',
+        'public/bower_components/jquery/dist/jquery.min.js',
+        'public/bower_components/underscore/underscore.js',
+        {pattern: 'public/src/**/*.js', included: false},
+        {pattern: 'public/test/**/*Spec.js', included: false},
+        'public/test/test-main.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-        'src/main.js'
+        'public/src/main.js'
     ],
 
 
