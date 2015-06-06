@@ -1,6 +1,6 @@
 requirejs.config({
     paths: {
-        'jquery': '../bower_components/jquery/dist/jquery.min.js',
+        'jquery': '../bower_components/jquery/dist/jquery.min',
         'underscore': '../bower_components/underscore/underscore'
     },
 
@@ -11,7 +11,7 @@ requirejs.config({
     }
 });
 
-define(['app', 'jquery'], function (App, $) {
+require(['app', 'jquery'], function (App, $) {
     var app = new App($('body'));
     app.render();
 });

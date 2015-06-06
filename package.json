@@ -11,6 +11,11 @@
   },
   "homepage": "https://github.com/karma-runner/gulp-karma",
   "devDependencies": {
+    "bluebird": "^2.3.4",
+    "koa": "^0.8.0",
+    "koa-logger": "^1.2.1",
+    "koa-route": "^1.1.4",
+    "koa-static": "^1.4.5",
     "karma": "^0.12.17",
     "karma-jasmine": "^0.2.2",
     "karma-chrome-launcher": "^0.1.3",
