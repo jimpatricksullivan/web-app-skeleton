@@ -18,7 +18,7 @@ module.exports = function(config) {
         'public/bower_components/jquery/dist/jquery.min.js',
         'public/bower_components/underscore/underscore.js',
         {pattern: 'public/src/**/*.js', included: false},
-        {pattern: 'public/spec/**/*Spec.js', included: false},
+        {pattern: 'public/spec/**/*.spec.js', included: false},
         'public/spec/test-main.js'
     ],
 
