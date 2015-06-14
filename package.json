@@ -24,6 +24,8 @@
     "gulp-bower": "^0.0.10",
     "karma-requirejs": "^0.2.2",
     "gulp-mocha": "^2.1.1",
-    "chai": "^3.0.0"
+    "chai": "^3.0.0",
+    "sinon": "^1.15.3",
+    "karma-sinon": "^1.0.4"
   }
 }

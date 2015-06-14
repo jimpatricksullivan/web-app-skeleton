@@ -9,13 +9,14 @@ module.exports = function(config) {
 
 
     // frameworks to use
-    frameworks: ['mocha', 'requirejs', 'chai'],
+    frameworks: ['mocha', 'requirejs', 'chai', 'sinon'],
 
 
     // list of files / patterns to load in the browser
     files: [
       'public/bower_components/requirejs/require.js',
       'public/bower_components/jquery/dist/jquery.min.js',
+      {pattern: 'public/spec/waitFor.js', included: false},
       {pattern: 'public/src/**/*.js', included: false},
       {pattern: 'public/spec/**/*.spec.js', included: false},
       'public/spec/test-main.js'
