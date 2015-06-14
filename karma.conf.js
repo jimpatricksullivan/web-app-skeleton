@@ -9,17 +9,16 @@ module.exports = function(config) {
 
 
     // frameworks to use
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['mocha', 'requirejs', 'chai'],
 
 
     // list of files / patterns to load in the browser
     files: [
-        'public/bower_components/requirejs/require.js',
-        'public/bower_components/jquery/dist/jquery.min.js',
-        'public/bower_components/underscore/underscore.js',
-        {pattern: 'public/src/**/*.js', included: false},
-        {pattern: 'public/spec/**/*.spec.js', included: false},
-        'public/spec/test-main.js'
+      'public/bower_components/requirejs/require.js',
+      'public/bower_components/jquery/dist/jquery.min.js',
+      {pattern: 'public/src/**/*.js', included: false},
+      {pattern: 'public/spec/**/*.spec.js', included: false},
+      'public/spec/test-main.js'
     ],
 
 

@@ -1,13 +1,17 @@
-define(['app', 'jquery'], function(App, $) {
-
+define([
+    'app',
+    'jquery'
+], function(
+    App,
+    localJquery // make sure that we're not using global $, i.e. that requirejs is working in karma
+) {
     describe('app', function() {
         it('renders html after fetching data', function() {
-            var el = $('<div></div>');
+            var el = localJquery('<div></div>');
 
             var app = new App(el);
             app.render();
-
-            expect(1).toEqual(1);
+            app.$el.text().should.equal('loading...');
         });
     });
 
