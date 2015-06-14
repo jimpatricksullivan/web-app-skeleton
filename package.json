@@ -1,13 +1,10 @@
 {
-  "name": "gulp-karma",
+  "name": "web-app-skeleton",
   "version": "0.0.1",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karma-runner/gulp-karma"
-  },
-  "bugs": {
-    "url": "https://github.com/karma-runner/gulp-karma/issues"
+    "url": "https://github.com/jimpatricksullivan/web-app-skeleton"
   },
   "homepage": "https://github.com/karma-runner/gulp-karma",
   "devDependencies": {
@@ -27,5 +24,10 @@
     "chai": "^3.0.0",
     "sinon": "^1.15.3",
     "karma-sinon": "^1.0.4"
+  },
+  "scripts": {
+    "postinstall": "`which gulp` bower",
+    "test": "node --harmony `which gulp`",
+    "start": "node --harmony src/app.js"
   }
 }
